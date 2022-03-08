@@ -1,5 +1,8 @@
 # stream-object-detection
 
+[![](https://img.shields.io/docker/pulls/sanidhya7921/stream-object-detection)](https://hub.docker.com/r/sanidhya7921/stream-object-detection)
+[![](https://img.shields.io/badge/Python-Torch-red)](https://pypi.org/project/torch/)
+
 ***Listen to webcam feed and perform object detection***
 
 <img src="demo.gif"/>
@@ -53,7 +56,7 @@ The main files and folders in the directory are:
 ## Methods
 
 
-There are 3 Classes for the company profile:
+There are 3 main classes:
 |Class Name|API|Description|
 |-|-|-|
 |`WebCam`|`WebCam.get_frame`|Get the frame from the webcam|
@@ -115,9 +118,9 @@ spec:
   maxReplicas: 2
   minReplicas: 1
   scaleTargetRef:
-	apiVersion: apps/v1
-	kind: Deployment
-	name: stream-object-detection
+      apiVersion: apps/v1
+      kind: Deployment
+      name: stream-object-detection
   targetCPUUtilizationPercentage: 70
 ```
 ConfigMap resource: <br>
