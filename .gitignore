@@ -1,0 +1,3 @@
+# ignore .pt files
+**.pt**
+venv_piviot

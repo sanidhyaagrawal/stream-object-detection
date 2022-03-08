@@ -1,0 +1,12 @@
+torch
+opencv-python-headless
+Pillow
+pandas
+requests
+pyyaml
+tqdm
+torchvision
+matplotlib
+seaborn
+vidgear[core]
+
